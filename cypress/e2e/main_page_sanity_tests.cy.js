@@ -2,6 +2,7 @@
 
 describe('main page sanity tests', () => {
 
+  const main_url = 'https://www.accesstravel.com/en-US/Home/Index'
   const category_hotels = '.hotels'
   const category_guides = '.guides'
   const category_tours = '.js-list-tours'
@@ -11,7 +12,7 @@ describe('main page sanity tests', () => {
 
   beforeEach(() => {
     cy.viewport(1400, 947)
-    cy.visit('https://www.accesstravel.com/en-US/Home/Index')
+    cy.visit(main_url)
   })
 
   it('navigate main page', () => {
